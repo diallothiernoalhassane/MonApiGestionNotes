@@ -25,16 +25,13 @@ exports.ajouterNote = async (req, res) => {
 };
 
 
-
-
-
 // Lire toutes les notes dans la base de données:
 // controllers/noteController.js
 
 exports.getToutesNotes = async (req, res) => {
   try {
     // 1️⃣ Pagination (version courte)
-    const page = parseInt(req.query.page) || 2;
+    const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
 

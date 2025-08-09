@@ -7,7 +7,6 @@ const notesRoutes = require('./routes/notesRoutes');
 const userRoutes = require('./routes/userRoute');
 const logs = require('./middlewares/logs');
 const gestionErreurs = require('./middlewares/gestionErreurs');
-
 const app = express();
 
 // Middlewares:
